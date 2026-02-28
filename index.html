@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <title>Banco Verde - Seu futuro mais tranquilo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/static/bank.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">
+      <img src="/static/assets/bancoverdelogo.png" alt="Banco Verde" class="logo-img" />
+      <span class="logo-text">Banco Verde</span>
+    </div>
+    <nav class="nav">
+      <a href="#conta">Conta</a>
+      <a href="#cartoes">Cartões</a>
+      <a href="#investimentos">Investimentos</a>
+      <button class="btn-outline">Acessar conta</button>
+      <button class="btn-solid">Abra sua conta</button>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <section class="hero-text">
+      <h1>Um banco digital simples, seguro e verde.</h1>
+      <p>
+        Conta 100% digital, cartão sem anuidade e investimentos alinhados com um
+        futuro mais sustentável.
+      </p>
+      <div class="hero-actions">
+        <button class="btn-solid">Começar agora</button>
+        <button class="btn-ghost">Simular investimentos</button>
+      </div>
+      <div class="hero-badges">
+        <span>✔ Atendimento humano e por IA 24h</span>
+        <span>✔ Cartão internacional</span>
+        <span>✔ Até 200% do CDI no saldo da conta</span>
+      </div>
+    </section>
+
+    <section class="hero-card">
+      <img src="/static/assets/mobilegirl.png" alt="App do Banco Verde no celular" class="hero-illustration" />
+      <h2>Resumo da sua conta</h2>
+      <p class="balance-label">Saldo disponível</p>
+      <p class="balance">R$ 12.450,32</p>
+      <div class="mini-grid">
+        <div class="mini-card">
+          <span>Investido</span>
+          <strong>R$ 8.200,00</strong>
+        </div>
+        <div class="mini-card">
+          <span>Limite cartão</span>
+          <strong>R$ 6.000,00</strong>
+        </div>
+      </div>
+      <button class="btn-outline full">Ver detalhes</button>
+    </section>
+  </main>
+
+  <section class="features" id="conta">
+    <h2>Tudo o que você espera de um banco moderno</h2>
+    <div class="features-grid">
+      <article class="feature">
+        <img src="/static/assets/humanidade.png" alt="Pessoas conectadas" class="feature-img" />
+        <h3>Conta digital completa</h3>
+        <p>PIX, boletos, TED, recebimentos e pagamento de contas sem burocracia.</p>
+      </article>
+      <article class="feature" id="cartoes">
+        <img src="/static/assets/bancoverdeicon.png" alt="Cartão Banco Verde" class="feature-img" />
+        <h3>Cartão sem anuidade</h3>
+        <p>Crédito e débito em um só cartão, com controle total pelo app.</p>
+      </article>
+      <article class="feature" id="investimentos">
+        <h3>Investimentos inteligentes</h3>
+        <p>Renda fixa, CDBs e fundos com foco em empresas sustentáveis.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Botão flutuante do chatbot -->
+  <button class="chat-fab" id="chat-fab" aria-label="Abrir chat">
+    <img src="/static/assets/bancoverdeicon.png" alt="Chat Banco Verde" />
+  </button>
+
+  <!-- Janela de chat -->
+  <div class="chat-window" id="chat-window" aria-hidden="true">
+    <header class="chat-header">
+      <div>
+        <strong>Assistente Banco Verde</strong>
+        <p>Chatbot • Online</p>
+      </div>
+      <button class="chat-close" id="chat-close" aria-label="Fechar chat">✕</button>
+    </header>
+
+    <div class="chat-body" id="chat-body">
+      <div class="chat-row bot">
+        <div class="bubble">
+          Olá! Sou o assistente virtual do Banco Verde. Posso ajudar com
+          dúvidas sobre conta, cartão ou investimentos. 🙂
+        </div>
+      </div>
+    </div>
+
+    <form class="chat-input-row" id="chat-form">
+      <input
+        type="text"
+        id="chat-input"
+        placeholder="Digite sua mensagem..."
+        autocomplete="off"
+        required
+      />
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <script src="/static/chat.js"></script>
+</body>
+</html>
